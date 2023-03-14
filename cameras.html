@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Aparaty</title>
+  </head>
+  <body>
+    Aparaty <br />
+    <table>
+      <tr>
+        <th>Nazwa</th>
+        <th>Megapixels</th>
+        <th>Matryca</th>
+        <th>Zoom</th>
+        <th>Grade</th>
+      </tr>
+      {{ range . }}
+      <tr>
+        <td>{{ .Nazwa }}</td>
+        <td>{{ .Megapixels }}</td>
+        <td>{{ .Matryca }}</td>
+        <td>{{ .Zoom }}</td>
+        <td>{{ .Grade }}</td>
+      </tr>
+      {{ end }}
+    </table>
+  </body>
+</html>
